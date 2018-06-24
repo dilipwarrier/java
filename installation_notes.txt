@@ -11,7 +11,9 @@ Installation notes
 
 * Github desktop: https://desktop.github.com/
   - Pull java repository https://github.com/dilipwarrier/java
-
+  - Make updates to make program compile
+  - Commit changes through github
+  
 * FTC SDK
 
 * Android Studio
