@@ -1,19 +1,19 @@
 Installation notes
 ------------------
 
+* Github desktop: https://desktop.github.com/
+  - Pull java repository https://github.com/dilipwarrier/java
+
+* Atom: https://atom.io
+  - Script plugin
+
 * JDK: http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html
 
 * Add Java bin to your path
 
-* Atom: https://atom.io
-  - Teletype plugin
-  - Script plugin
-
-* Github desktop: https://desktop.github.com/
-  - Pull java repository https://github.com/dilipwarrier/java
-  - Make updates to make program compile
+* Make updates to make program compile
   - Commit changes through github
-  
+
 * FTC SDK
 
 * Android Studio
