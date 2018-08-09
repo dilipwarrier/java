@@ -1,7 +1,7 @@
 class FactorialOf15{
     public static void main(String args[]){
       int i;
-      double Math.pow fact=1;
+      double fact=1;
       int number=15;//It is the number to calculate factorial.
     for(i=1;i<=number;i++){
     fact=fact*i;
