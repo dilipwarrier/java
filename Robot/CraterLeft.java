@@ -4,7 +4,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
-@Autonomous(name = "CraterLeft (Blocks to Java)", group = "")
+@Autonomous(name = "CraterLeft2 (Blocks to Java)", group = "")
 public class CraterLeft extends LinearOpMode {
 
   private DcMotor front_right;
@@ -62,19 +62,29 @@ public class CraterLeft extends LinearOpMode {
         front_left.setPower(0.5);
         back_right.setPower(-0.5);
         back_left.setPower(0.5);
-        sleep(1500);
+        sleep(1250);
         // 45 Degree Turn
         front_right.setPower(-0.75);
         front_left.setPower(0);
         back_right.setPower(-0.75);
         back_left.setPower(0);
-        sleep(1400);
+        sleep(1500);
         // Go Forward
         front_right.setPower(-0.5);
         front_left.setPower(0.5);
         back_right.setPower(-0.5);
         back_left.setPower(0.5);
-        sleep(1400);
+        sleep(2250);
+        front_right.setPower(0);
+        front_left.setPower(0);
+        back_right.setPower(0);
+        back_left.setPower(0);
+        sleep(500);
+        front_right.setPower(1);
+        front_left.setPower(-1);
+        back_right.setPower(1);
+        back_left.setPower(-1);
+        sleep(2750);
         break;
       }
     }

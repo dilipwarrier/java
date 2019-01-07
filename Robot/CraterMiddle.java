@@ -4,7 +4,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
-@Autonomous(name = "CraterMiddle (Blocks to Java)", group = "")
+@Autonomous(name = "CraterMiddle2 (Blocks to Java)", group = "")
 public class CraterMiddle extends LinearOpMode {
 
   private DcMotor front_right;
@@ -47,33 +47,43 @@ public class CraterMiddle extends LinearOpMode {
         front_left.setPower(i * -1);
         back_right.setPower(i);
         back_left.setPower(i * -1);
-        sleep(300);
+        sleep(750);
+        // 90 Degree Turn
+        front_right.setPower(-0.5);
+        front_left.setPower(0);
+        back_right.setPower(-0.5);
+        back_left.setPower(0);
+        sleep(2450);
+        // Go Forward
+        front_right.setPower(-0.5);
+        front_left.setPower(0.5);
+        back_right.setPower(-0.5);
+        back_left.setPower(0.5);
+        sleep(1250);
+        // 45 Degree Turn
+        front_right.setPower(-0.75);
+        front_left.setPower(0);
+        back_right.setPower(-0.75);
+        back_left.setPower(0);
+        sleep(1750);
+        // Go Forward
+        front_right.setPower(-0.5);
+        front_left.setPower(0.5);
+        back_right.setPower(-0.5);
+        back_left.setPower(0.5);
+        sleep(2250);
+        front_right.setPower(0);
+        front_left.setPower(0);
+        back_right.setPower(0);
+        back_left.setPower(0);
+        sleep(500);
+        front_right.setPower(1);
+        front_left.setPower(-1);
+        back_right.setPower(1);
+        back_left.setPower(-1);
+        sleep(2750);
+        break;
       }
-      // 90 Degree Turn
-      front_right.setPower(-0.5);
-      front_left.setPower(0);
-      back_right.setPower(-0.5);
-      back_left.setPower(0);
-      sleep(2500);
-      // Go Forward
-      front_right.setPower(-0.5);
-      front_left.setPower(0.5);
-      back_right.setPower(-0.5);
-      back_left.setPower(0.5);
-      sleep(1500);
-      // 45 Degree Turn
-      front_right.setPower(-0.75);
-      front_left.setPower(0);
-      back_right.setPower(-0.75);
-      back_left.setPower(0);
-      sleep(1500);
-      // Go Forward
-      front_right.setPower(-0.3);
-      front_left.setPower(0.3);
-      back_right.setPower(-0.3);
-      back_left.setPower(0.3);
-      sleep(1000);
-      break;
     }
   }
 }

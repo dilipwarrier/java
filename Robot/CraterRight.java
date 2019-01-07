@@ -4,7 +4,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
-@Autonomous(name = "CraterRight (Blocks to Java)", group = "")
+@Autonomous(name = "CraterRight2 (Blocks to Java)", group = "")
 public class CraterRight extends LinearOpMode {
 
   private DcMotor front_right;
@@ -39,7 +39,7 @@ public class CraterRight extends LinearOpMode {
         front_right.setPower(-0.5);
         back_right.setPower(-0.5);
         back_left.setPower(0.5);
-        sleep(1400);
+        sleep(1600);
         // Move backward to start
         front_right.setPower(0.4);
         back_right.setPower(0.4);
@@ -57,7 +57,7 @@ public class CraterRight extends LinearOpMode {
         front_left.setPower(0);
         back_right.setPower(-0.5);
         back_left.setPower(0);
-        sleep(2050);
+        sleep(1975);
         // Go Forward
         front_right.setPower(-0.5);
         front_left.setPower(0.5);
@@ -65,17 +65,22 @@ public class CraterRight extends LinearOpMode {
         back_left.setPower(0.5);
         sleep(1100);
         // 45 Degree Turn
-        front_right.setPower(-0.75);
+        front_right.setPower(-0.85);
         front_left.setPower(0);
-        back_right.setPower(-0.75);
+        back_right.setPower(-0.85);
         back_left.setPower(0);
-        sleep(1650);
+        sleep(1840);
         // Go Forward
-        front_right.setPower(-0.3);
-        front_left.setPower(0.3);
-        back_right.setPower(-0.3);
-        back_left.setPower(0.3);
-        sleep(2500);
+        front_right.setPower(-0.4);
+        front_left.setPower(0.4);
+        back_right.setPower(-0.4);
+        back_left.setPower(0.4);
+        sleep(3000);
+        front_right.setPower(0.6);
+        front_left.setPower(-0.66);
+        back_right.setPower(0.6);
+        back_left.setPower(-0.66);
+        sleep(4600);
         telemetry.update();
         break;
       }
