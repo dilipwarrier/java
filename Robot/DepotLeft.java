@@ -4,8 +4,8 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
-@TeleOp(name = "DepotLeft (Blocks to Java)", group = "")
-public class DepotLeft extends LinearOpMode {
+@TeleOp(name = "DepotLeft2 (Blocks to Java)", group = "")
+public class DepotLeft2 extends LinearOpMode {
 
   private DcMotor front_right;
   private DcMotor back_right;

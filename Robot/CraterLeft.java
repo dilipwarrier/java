@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
 @Autonomous(name = "CraterLeft2 (Blocks to Java)", group = "")
-public class CraterLeft extends LinearOpMode {
+public class CraterLeft2 extends LinearOpMode {
 
   private DcMotor front_right;
   private DcMotor back_right;
@@ -38,25 +38,25 @@ public class CraterLeft extends LinearOpMode {
         front_right.setPower(-0.5);
         back_right.setPower(-0.5);
         back_left.setPower(0.5);
-        sleep(1700);
+        sleep(1400);
         // Move backward to start
         front_right.setPower(0.4);
         back_right.setPower(0.4);
         front_left.setPower(-0.4);
         back_left.setPower(-0.4);
-        sleep(1250);
+        sleep(750);
         // Moving to the right
         front_left.setPower(0);
         back_left.setPower(0);
         front_right.setPower(0.5);
         back_right.setPower(0.5);
-        sleep(1400);
+        sleep(1350);
         // 90 Degree Turn
         front_right.setPower(-0.5);
-        front_left.setPower(0);
+        front_left.setPower(-0.1);
         back_right.setPower(-0.5);
-        back_left.setPower(0);
-        sleep(2450);
+        back_left.setPower(-0.1);
+        sleep(2000);
         // Go Forward
         front_right.setPower(-0.5);
         front_left.setPower(0.5);
@@ -68,23 +68,23 @@ public class CraterLeft extends LinearOpMode {
         front_left.setPower(0);
         back_right.setPower(-0.75);
         back_left.setPower(0);
-        sleep(1500);
+        sleep(1650);
         // Go Forward
         front_right.setPower(-0.5);
         front_left.setPower(0.5);
         back_right.setPower(-0.5);
         back_left.setPower(0.5);
-        sleep(2250);
+        sleep(2400);
         front_right.setPower(0);
         front_left.setPower(0);
         back_right.setPower(0);
         back_left.setPower(0);
-        sleep(500);
-        front_right.setPower(1);
-        front_left.setPower(-1);
-        back_right.setPower(1);
-        back_left.setPower(-1);
-        sleep(2750);
+        sleep(1000);
+        front_right.setPower(0.75);
+        front_left.setPower(-0.75);
+        back_right.setPower(0.75);
+        back_left.setPower(-0.75);
+        sleep(5000);
         break;
       }
     }

@@ -4,8 +4,8 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
-@TeleOp(name = "DepotRight (Blocks to Java)", group = "")
-public class DepotRight extends LinearOpMode {
+@TeleOp(name = "DepotRight2 (Blocks to Java)", group = "")
+public class DepotRight2 extends LinearOpMode {
 
   private DcMotor front_left;
   private DcMotor front_right;
@@ -49,13 +49,23 @@ public class DepotRight extends LinearOpMode {
       front_right.setPower(0);
       back_left.setPower(-0.3);
       back_right.setPower(0);
-      sleep(1500);
+      sleep(1600);
+      front_left.setPower(0);
+      front_right.setPower(0);
+      back_left.setPower(0);
+      back_right.setPower(0);
+      sleep(150);
+      front_left.setPower(0.5);
+      front_right.setPower(-0.5);
+      back_left.setPower(0.5);
+      back_right.setPower(-0.5);
+      sleep(500);
       // 90 turn
       front_right.setPower(0);
       front_left.setPower(0.5);
       back_right.setPower(0);
       back_left.setPower(0.5);
-      sleep(2500);
+      sleep(2150);
       // Forward
       front_right.setPower(1);
       front_left.setPower(-1);
@@ -67,19 +77,7 @@ public class DepotRight extends LinearOpMode {
       front_left.setPower(0);
       back_right.setPower(0.5);
       back_left.setPower(0);
-      sleep(2500);
-      // Forward
-      front_right.setPower(1);
-      front_left.setPower(-1);
-      back_right.setPower(1);
-      back_left.setPower(-1);
-      sleep(0);
-      // 90 turn
-      front_right.setPower(0.5);
-      front_left.setPower(0.5);
-      back_right.setPower(0.5);
-      back_left.setPower(0.5);
-      sleep(1000);
+      sleep(500);
       front_right.setPower(0.5);
       front_left.setPower(0);
       back_right.setPower(0.5);
