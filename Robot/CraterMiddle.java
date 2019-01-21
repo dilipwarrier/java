@@ -4,8 +4,8 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
-@Autonomous(name = "CraterMiddle2 (Blocks to Java)", group = "")
-public class CraterMiddle extends LinearOpMode {
+@Autonomous(name = "CraterMiddle3 (Blocks to Java)", group = "")
+public class CraterMiddle3 extends LinearOpMode {
 
   private DcMotor front_right;
   private DcMotor front_left;
@@ -53,7 +53,7 @@ public class CraterMiddle extends LinearOpMode {
         front_left.setPower(0);
         back_right.setPower(-0.5);
         back_left.setPower(0);
-        sleep(2450);
+        sleep(4000);
         // Go Forward
         front_right.setPower(-0.5);
         front_left.setPower(0.5);

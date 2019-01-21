@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
 @Autonomous(name = "DepotMiddle2 (Blocks to Java)", group = "")
-public class DepotMiddle extends LinearOpMode {
+public class DepotMiddle2 extends LinearOpMode {
 
   private DcMotor front_right;
   private DcMotor front_left;
@@ -33,7 +33,7 @@ public class DepotMiddle extends LinearOpMode {
         front_left.setPower(i);
         back_right.setPower(i * -1);
         back_left.setPower(i);
-        sleep(300);
+        sleep(275);
       }
       // Rest
       front_right.setPower(0);
@@ -73,7 +73,7 @@ public class DepotMiddle extends LinearOpMode {
       front_left.setPower(0.5);
       back_right.setPower(0.5);
       back_left.setPower(0.5);
-      sleep(1200);
+      sleep(1100);
       front_right.setPower(1);
       front_left.setPower(-1);
       back_right.setPower(1);
@@ -83,12 +83,12 @@ public class DepotMiddle extends LinearOpMode {
       front_left.setPower(0);
       back_right.setPower(0.5);
       back_left.setPower(0);
-      sleep(6000);
-      front_right.setPower(1);
-      front_left.setPower(-1);
-      back_right.setPower(1);
-      back_left.setPower(-1);
-      sleep(2000);
+      sleep(4900);
+      front_right.setPower(0.5);
+      front_left.setPower(-0.5);
+      back_right.setPower(0.5);
+      back_left.setPower(-0.5);
+      sleep(4000);
     }
   }
 }

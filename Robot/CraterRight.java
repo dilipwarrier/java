@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
 @Autonomous(name = "CraterRight2 (Blocks to Java)", group = "")
-public class CraterRight extends LinearOpMode {
+public class CraterRight2 extends LinearOpMode {
 
   private DcMotor front_right;
   private DcMotor back_right;
@@ -33,7 +33,7 @@ public class CraterRight extends LinearOpMode {
         back_right.setPower(0);
         front_left.setPower(0.4);
         back_left.setPower(0.4);
-        sleep(1000);
+        sleep(900);
         // Move forward to move off cube
         front_left.setPower(0.5);
         front_right.setPower(-0.5);
@@ -57,30 +57,30 @@ public class CraterRight extends LinearOpMode {
         front_left.setPower(0);
         back_right.setPower(-0.5);
         back_left.setPower(0);
-        sleep(1975);
+        sleep(2000);
         // Go Forward
         front_right.setPower(-0.5);
         front_left.setPower(0.5);
         back_right.setPower(-0.5);
         back_left.setPower(0.5);
-        sleep(1100);
+        sleep(1250);
         // 45 Degree Turn
-        front_right.setPower(-0.85);
+        front_right.setPower(-0.75);
         front_left.setPower(0);
-        back_right.setPower(-0.85);
+        back_right.setPower(-0.75);
         back_left.setPower(0);
-        sleep(1840);
+        sleep(1650);
         // Go Forward
-        front_right.setPower(-0.4);
-        front_left.setPower(0.4);
-        back_right.setPower(-0.4);
-        back_left.setPower(0.4);
-        sleep(3000);
+        front_right.setPower(-0.5);
+        front_left.setPower(0.5);
+        back_right.setPower(-0.5);
+        back_left.setPower(0.5);
+        sleep(3100);
         front_right.setPower(0.6);
-        front_left.setPower(-0.66);
+        front_left.setPower(-0.65);
         back_right.setPower(0.6);
-        back_left.setPower(-0.66);
-        sleep(4600);
+        back_left.setPower(-0.65);
+        sleep(4700);
         telemetry.update();
         break;
       }
