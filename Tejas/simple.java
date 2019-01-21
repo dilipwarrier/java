@@ -7,6 +7,7 @@ public static void main (String args[]){
     x*=counter;
   }
 
-System.out.println(df.format(x));
+System.out.println(math.pow(12)*x);
+
   }
 }
