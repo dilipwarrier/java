@@ -4,8 +4,8 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
-@Autonomous(name = "CraterRight2 (Blocks to Java)", group = "")
-public class CraterRight2 extends LinearOpMode {
+@Autonomous(name = "CraterRight4 (Blocks to Java)", group = "")
+public class CraterRight4 extends LinearOpMode {
 
   private DcMotor front_right;
   private DcMotor back_right;
@@ -33,7 +33,7 @@ public class CraterRight2 extends LinearOpMode {
         back_right.setPower(0);
         front_left.setPower(0.4);
         back_left.setPower(0.4);
-        sleep(900);
+        sleep(1000);
         // Move forward to move off cube
         front_left.setPower(0.5);
         front_right.setPower(-0.5);
@@ -57,30 +57,35 @@ public class CraterRight2 extends LinearOpMode {
         front_left.setPower(0);
         back_right.setPower(-0.5);
         back_left.setPower(0);
-        sleep(2000);
+        sleep(1900);
         // Go Forward
         front_right.setPower(-0.5);
         front_left.setPower(0.5);
         back_right.setPower(-0.5);
         back_left.setPower(0.5);
-        sleep(1250);
+        sleep(1750);
         // 45 Degree Turn
         front_right.setPower(-0.75);
         front_left.setPower(0);
         back_right.setPower(-0.75);
         back_left.setPower(0);
-        sleep(1650);
+        sleep(1000);
         // Go Forward
         front_right.setPower(-0.5);
         front_left.setPower(0.5);
         back_right.setPower(-0.5);
         back_left.setPower(0.5);
-        sleep(3100);
-        front_right.setPower(0.6);
-        front_left.setPower(-0.65);
-        back_right.setPower(0.6);
-        back_left.setPower(-0.65);
-        sleep(4700);
+        sleep(2600);
+        front_right.setPower(0.8);
+        front_left.setPower(-0.8);
+        back_right.setPower(0.8);
+        back_left.setPower(-0.8);
+        sleep(5000);
+        front_right.setPower(1);
+        front_left.setPower(0);
+        back_right.setPower(1);
+        back_left.setPower(0);
+        sleep(300);
         telemetry.update();
         break;
       }

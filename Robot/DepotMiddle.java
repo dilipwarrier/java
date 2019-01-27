@@ -4,8 +4,8 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
-@Autonomous(name = "DepotMiddle2 (Blocks to Java)", group = "")
-public class DepotMiddle2 extends LinearOpMode {
+@Autonomous(name = "DepotMiddle3 (Blocks to Java)", group = "")
+public class DepotMiddle3 extends LinearOpMode {
 
   private DcMotor front_right;
   private DcMotor front_left;
@@ -27,7 +27,6 @@ public class DepotMiddle2 extends LinearOpMode {
     // Put initialization blocks here.
     waitForStart();
     if (opModeIsActive()) {
-      // Going Forward
       for (i = 1; i >= 0; i -= 0.2) {
         front_right.setPower(i * -1);
         front_left.setPower(i);
@@ -49,46 +48,40 @@ public class DepotMiddle2 extends LinearOpMode {
         back_left.setPower(i * -1);
         sleep(250);
       }
-      // 90 turn
+      // 90 Degree Turn
       front_right.setPower(0);
       front_left.setPower(0.5);
       back_right.setPower(0);
       back_left.setPower(0.5);
-      sleep(2500);
-      // Forward
-      front_right.setPower(1);
-      front_left.setPower(-1);
-      back_right.setPower(1);
-      back_left.setPower(-1);
-      sleep(600);
-      // 45 turn
-      front_right.setPower(0.5);
-      front_left.setPower(0);
-      back_right.setPower(0.5);
-      back_left.setPower(0);
-      sleep(2500);
-      // Forward
-      // 90 turn
-      front_right.setPower(0.5);
-      front_left.setPower(0.5);
-      back_right.setPower(0.5);
-      back_left.setPower(0.5);
-      sleep(1100);
-      front_right.setPower(1);
-      front_left.setPower(-1);
-      back_right.setPower(1);
-      back_left.setPower(-1);
-      sleep(500);
-      front_right.setPower(0.5);
-      front_left.setPower(0);
-      back_right.setPower(0.5);
-      back_left.setPower(0);
-      sleep(4900);
+      sleep(2150);
+      // Go Forward
       front_right.setPower(0.5);
       front_left.setPower(-0.5);
-      back_right.setPower(0.5);
+      back_right.setPower(-0.5);
       back_left.setPower(-0.5);
-      sleep(4000);
+      sleep(1450);
+      // 45 Degree Turn
+      front_right.setPower(0.75);
+      front_left.setPower(0);
+      back_right.setPower(0.75);
+      back_left.setPower(0);
+      sleep(1000);
+      // Go Forward
+      front_right.setPower(-0.5);
+      front_left.setPower(0.5);
+      back_right.setPower(-0.5);
+      back_left.setPower(0.5);
+      sleep(2100);
+      front_right.setPower(0);
+      front_left.setPower(0);
+      back_right.setPower(0);
+      back_left.setPower(0);
+      sleep(1000);
+      front_right.setPower(0.75);
+      front_left.setPower(-0.75);
+      back_right.setPower(0.75);
+      back_left.setPower(-0.75);
+      sleep(5000);
     }
   }
 }

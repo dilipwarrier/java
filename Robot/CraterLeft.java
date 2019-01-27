@@ -4,8 +4,8 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
-@Autonomous(name = "CraterLeft2 (Blocks to Java)", group = "")
-public class CraterLeft2 extends LinearOpMode {
+@Autonomous(name = "CraterLeft4 (Blocks to Java)", group = "")
+public class CraterLeft4 extends LinearOpMode {
 
   private DcMotor front_right;
   private DcMotor back_right;
@@ -38,43 +38,43 @@ public class CraterLeft2 extends LinearOpMode {
         front_right.setPower(-0.5);
         back_right.setPower(-0.5);
         back_left.setPower(0.5);
-        sleep(1400);
+        sleep(1500);
         // Move backward to start
         front_right.setPower(0.4);
         back_right.setPower(0.4);
         front_left.setPower(-0.4);
         back_left.setPower(-0.4);
-        sleep(750);
+        sleep(1250);
         // Moving to the right
         front_left.setPower(0);
         back_left.setPower(0);
         front_right.setPower(0.5);
         back_right.setPower(0.5);
-        sleep(1350);
+        sleep(1000);
         // 90 Degree Turn
         front_right.setPower(-0.5);
-        front_left.setPower(-0.1);
+        front_left.setPower(0);
         back_right.setPower(-0.5);
-        back_left.setPower(-0.1);
-        sleep(2000);
+        back_left.setPower(0);
+        sleep(2500);
         // Go Forward
         front_right.setPower(-0.5);
         front_left.setPower(0.5);
         back_right.setPower(-0.5);
         back_left.setPower(0.5);
-        sleep(1250);
+        sleep(1000);
         // 45 Degree Turn
         front_right.setPower(-0.75);
         front_left.setPower(0);
         back_right.setPower(-0.75);
         back_left.setPower(0);
-        sleep(1650);
+        sleep(1000);
         // Go Forward
         front_right.setPower(-0.5);
         front_left.setPower(0.5);
         back_right.setPower(-0.5);
         back_left.setPower(0.5);
-        sleep(2400);
+        sleep(2100);
         front_right.setPower(0);
         front_left.setPower(0);
         back_right.setPower(0);
